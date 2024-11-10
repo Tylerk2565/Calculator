@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+<section class="calc-container">
+    <table class="calculator">
+      <tr>
+        <td colspan="3"><input readonly id="result" type="text"></td>
+        <td><input class="clear blueBtn" onclick="clearScreen()" type="button" value="c"></td>
+      </tr>
+      <tr>
+        <td><input class="number greyBtn" onclick="display('1')" type="button" value="1"></td>
+        <td><input class="number greyBtn" onclick="display('2')" type="button" value="2"></td>
+        <td><input class="number greyBtn" onclick="display('3')" type="button" value="3"></td>
+        <td><input class="operator lightGreyBtn" onclick="display('/')" type="button" value="/"></td>
+      </tr>
+      <tr>
+        <td><input class="number greyBtn" onclick="display('4')" type="button" value="4"></td>
+        <td><input class="number greyBtn" onclick="display('5')" type="button" value="5"></td>
+        <td><input class="number greyBtn" onclick="display('6')" type="button" value="6"></td>
+        <td><input class="operator lightGreyBtn" onclick="display('*')" type="button" value="*"></td>
+      </tr>
+      <tr>
+        <td><input class="number greyBtn" onclick="display('7')" type="button" value="7"></td>
+        <td><input class="number greyBtn" onclick="display('8')" type="button" value="8"></td>
+        <td><input class="number greyBtn" onclick="display('9')" type="button" value="9"></td>
+        <td><input class="operator lightGreyBtn" onclick="display('-')" type="button" value="-"></td>
+      </tr>
+      <tr>
+        <td><input class="number greyBtn" onclick="display('0')" type="button" value="0"></td>
+        <td><input class="number greyBtn" onclick="display('.')" type="button" value="."></td>
+        <td><input class="equal greyBtn" onclick="calculate()" type="button" value="="></td>
+        <td><input class="operator lightGreyBtn" onclick="display('+')" type="button" value="+"></td>
+      </tr>
+    </table>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
